@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- The icon can be used freely in both personal and commercial projects with no attribution required, but always appreciated. 
+You may NOT sub-license, resell, rent, redistribute or otherwise transfer the icon without express written permission from iconmonstr.com -->
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+<path id="banknote-3-icon" d="M256,192.8c-34.904,0-63.2,28.296-63.2,63.2s28.296,63.199,63.2,63.199s63.199-28.295,63.199-63.199
+	S290.904,192.8,256,192.8z M262.281,288.537v8.106h-11.596v-7.25c-5.566-0.476-12.917-2.493-18.332-5.477l3.836-13.364
+	c6.133,2.391,15.08,5.398,21.697,3.955c5.787-1.263,7.245-6.459,0.434-9.395c-5.752-2.584-25.551-5.283-25.551-21.841
+	c0-6.86,5.141-16.288,17.916-19.077v-8.226h11.596v7.549c4.971,0.342,10.039,1.26,15.894,3.091
+	c-0.585,2.558-3.116,13.657-3.116,13.657c-4.043-1.375-10.65-3.78-16.994-3.424c-7.839,0.44-8.4,6.165-3.116,8.808
+	c10.84,4.901,26.54,9.071,26.54,23.691C281.504,280.639,272.701,287.073,262.281,288.537z M50,148.006v215.988h412V148.006H50z
+	 M388.703,333.994H123.297c-8.275-17.299-26.018-35.3-43.297-44.053v-67.883c17.279-8.753,35.021-26.755,43.297-44.053h265.406
+	c8.275,17.298,26.018,35.3,43.297,44.053v67.883C414.721,298.694,396.979,316.695,388.703,333.994z"/>
+</svg>
