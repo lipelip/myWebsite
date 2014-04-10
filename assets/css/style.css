@@ -254,7 +254,14 @@ nav ul {
       margin-left: 20px; }
     .menu .menu__item--link {
       text-decoration: none;
-      color: #333333; } }
+      color: #333333; }
+
+  .menu--hide li {
+    display: none;
+    visibility: hidden; }
+    .menu--hide li:nth-child(2) {
+      display: block;
+      visibility: visible; } }
 /* `facts
 	---------------------------------------*/
 .section--facts .facts__fact__img20 {
@@ -574,7 +581,8 @@ nav ul {
       width: 100%; }
       .section--work .work__centvingtcinq__link:hover {
         color: #fff;
-        background: rgba(0, 150, 221, 0.9); } }
+        background: rgba(0, 150, 221, 0.9);
+        border: none; } }
 @media (min-width: 1000px) {
   .section--work .section--work--bottom {
     margin-left: 0;

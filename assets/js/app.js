@@ -1,4 +1,4 @@
-$(document).ready(function(){
+document.addEventListener('DOMContentLoaded', function(){
   
   if(document.body.className == "mobile"){
 		  var lipelip = document.getElementsByClassName("next__link--lipelip")[0];
