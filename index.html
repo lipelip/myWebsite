@@ -7,9 +7,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
   
-  <link rel='stylesheet' href='cd1eed670cf52cc1e53eac3f201f21f4.css'>
-  <script src='38a3567b81581a998b8c59e1991a3bea.js'></script>
+  <link rel='stylesheet' href='assets/css/normalize.css'>
+<link rel='stylesheet' href='assets/css/style.css'>
+  <script src='assets/js/app.js'></script>
   
   <link href="assets/favicon.ico" rel="shortcut icon">  
  
@@ -39,7 +62,7 @@
 	    <!-- @todo la taille du bouton svg en background ne s'adapte pas -->
 	    <button onclick="refreshFacts()" class="facts__new">New facts</button>
 	    <h1 class="section__title">Facts <span class="hide">about lipelip</span></h1>
-	    <p class="facts__fact__text">I always hang a socks up by the fireplace on christmas</p>
+	    <p class="facts__fact__text">In 2000 I made a bet with my best men to spend the new year of 2015 on a boat</p>
 	    <div class="facts__fact__img facts__fact__img1"></div>
 	
 		  <button class="next__link next__link--lipelip">Philippe Thronte</button>  
@@ -54,7 +77,7 @@
 		    
 		    <div class="section__column">
 			    <button class="show--next--text">Next</button>
-			    <p class="show--text">Philippe’s main interest is to evolve inside a small group of motivated peoples. For the moment this takes place inside the <a href="http://dwm.re">DWM group</a> at <a href="http://www.infographie-sup.be">ESIAJ</a> school where he teaches HTML & CSS to brilliant and young students, YKWIM.</p>
+			    <p class="show--text">Philippe’s main interest is to evolve inside a small group of motivated people where he can explore solutions and take decisions. For the moment this takes place inside the <a href="http://dwm.re">DWM group</a> at <a href="http://www.infographie-sup.be">ESIAJ</a> school where he teaches HTML & CSS to brilliant and young students, YKWIM.</p>
 					<p>When he’s not teaching, he uses his passion for digital design and new technologies to help you in crafting tailor easy to use websites.</p>
 					<p>He’s also one of the creator of the freelance group <a href="http://centvingtcinq.com">centvingtcinq</a>.</p>
 					
@@ -89,13 +112,13 @@
 	
 	    <div class="section--work--bottom">
 		    <h1 class="section__title section__title--nopadding">Ricotta &amp; Parmesan</h1>
-		    <p>is a Italian restaurant specialize in pasta and antipasti since 1999, here’s one of my favorite dish, the Beef Carpaccio with Parmesan cheese dessed with white truffle topped with rocket.</p>
+		    <p>is an Italian restaurant specialized in pasta and antipasti since 1999, here’s one of my favorite dish: the Beef Carpaccio and Parmesan cheese topped with rocket dressed with white truffle oil.</p>
 		    <a class="section--work--link" href="http://ricottaparmesan.com">Check the mobile version -</a>
 	    </div>
 	    
 	    <button class="next__link">Assets</button>
 		
-			<a class="work__centvingtcinq__link hide" href="http://centvingtcinq.com">Procrastination is a bitch so you’ll only get my latest project for more check centvingtcinq.com</a>
+			<a class="work__centvingtcinq__link hide" href="http://centvingtcinq.com">Procrastination is a bitch so you’ll only get my latest project, for more check centvingtcinq.com</a>
 			    
 	</section>
 	

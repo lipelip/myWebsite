@@ -194,8 +194,29 @@ document.addEventListener('DOMContentLoaded', function(){
 
 function refreshFacts(){
 	
-	myFacts = ["kedis", "cheddar", "retour", "du", "futur"];		
-	maxFacts = myFacts.length;
+	myFacts = [
+			"My dog's name is Wifi",
+			"In 2000 I made a bet with my best men to spend the new year of 2015 on a boat", 
+			"I wish we had the same in euro", 
+			"I love beer, especially the darker ale. Chimay Blue is my favorite",  
+			"I love snow, snowboarding is my thing",
+			"I always hang a sock up by the fireplace on Christmas", 
+			"As I have my own house now, I've made a pact with my wife to buy a real Christmas tree",
+			"As I'm a teacher, I drink coffee",
+			"I'm married and deeply in love",
+			"That's how my thumbs looks like",
+			"I only play FIFA on playsation",
+			"I hate xBox's controller",
+			"I'm no singer",
+			"I can make a beautiful paper plane",
+			"I wanna go to space",
+			"What's going on with this icon? Please, stop using it",
+			"I'm pretty decent with darts",
+			"I have no idea what this icon means…",
+			"A triangle",
+			"I want to have as many friends that are world champions as I can, I have two"
+		];		
+	maxFacts = myFacts.length - 1;
 	var randomFacts = Math.floor(Math.random() * maxFacts + 1),
 	 		factImage = document.getElementsByClassName("facts__fact__img")[0],
 	 		factContent = document.getElementsByClassName("facts__fact__text")[0],
@@ -204,7 +225,7 @@ function refreshFacts(){
 	factContent.innerHTML = myFacts[randomFacts];
 	factImage.className = "facts__fact__img";
 	factImage.classList.add("facts__fact__img"+randomFacts);
-	console.log(this);
+	console.log(randomFacts-1);
 	
 }
 

@@ -264,9 +264,6 @@ nav ul {
       visibility: visible; } }
 /* `facts
 	---------------------------------------*/
-.section--facts .facts__fact__img20 {
-  background-image: url(../img/facts-image20.svg); }
-
 .section--facts .facts__fact__img19 {
   background-image: url(../img/facts-image19.svg); }
 
@@ -323,6 +320,9 @@ nav ul {
 
 .section--facts .facts__fact__img1 {
   background-image: url(../img/facts-image1.svg); }
+
+.section--facts .facts__fact__img0 {
+  background-image: url(../img/facts-image0.svg); }
 
 @media (max-width: 599px) {
   .facts__fact__img {
@@ -444,7 +444,9 @@ nav ul {
   .section--about {
     padding-left: 25%; }
     .section--about .section__title, .section--about .section__column {
-      margin-left: -170px; } }
+      margin-left: -170px; }
+    .section--about .show--text {
+      margin-top: 0; } }
 @media (min-width: 1200px) {
   .section--about .section__title, .section--about .section__column {
     margin-left: 0; }
@@ -452,9 +454,7 @@ nav ul {
     -webkit-columns: 2 2em;
     -moz-columns: 2 2em;
     columns: 2 2em;
-    padding-top: 2em; }
-    .section--about .section__column p:first-child {
-      margin-top: 0; } }
+    padding-top: 2em; } }
 /* `connect
 	---------------------------------------*/
 @media (max-width: 599px) {
@@ -702,7 +702,7 @@ nav ul {
   .section--work .section--work--bottom {
     left: 16.66667%; }
 
-  .section--about span[data-picture] {
+  .section--about .image__about {
     margin-right: 1.66667%; } }
 @media (min-width: 1600px) {
   .section--facts,
@@ -715,13 +715,13 @@ nav ul {
   .section--work .section--work--bottom {
     left: 25%; }
 
-  .section--about span[data-picture] {
+  .section--about .image__about {
     margin-right: 16.66667%; }
 
   .menu {
     margin-right: 13.5%; } }
 @media (min-width: 1800px) {
-  .section--about span[data-picture] {
+  .section--about .image__about {
     margin-right: 25%; }
 
   .menu {
@@ -737,7 +737,7 @@ nav ul {
   .section--work .section--work--bottom {
     left: 30%; }
 
-  .section--about span[data-picture] {
+  .section--about .image__about {
     margin-right: 30%; }
 
   .menu {
