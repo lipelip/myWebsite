@@ -47,7 +47,8 @@ nav ul {
   text-indent: -9999px;
   background: url(../img/refresh.svg) no-repeat;
   background-size: contain;
-  border: none; }
+  border: none;
+  z-index: 10; }
 
 .connect__status--notavailable {
   color: #FF0200; }
@@ -806,7 +807,13 @@ h1 {
 @media (min-width: 600px) {
   h1 {
     font-size: 50px;
-    font-size: 5rem; } }
+    font-size: 5rem; }
+
+  .wf-inactive h1 {
+    font-size: 35px;
+    font-size: 3.5rem;
+    position: relative;
+    top: 13px; } }
 .list {
   font-family: helvetica, arial, sans-serif;
   font-size: 13px;
@@ -829,6 +836,9 @@ p {
 @media (min-width: 600px) {
   p {
     margin: 20px 0; } }
+@media (min-width: 1200px) {
+  p {
+    margin: 28px 0; } }
 /* `Classes
 	---------------------------------------*/
 .hide {
