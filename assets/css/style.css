@@ -595,7 +595,7 @@ nav ul {
 @media (max-width: 599px) {
   .section--assets .list {
     position: absolute;
-    top: 50%;
+    top: 55%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -794,7 +794,7 @@ h1 {
     text-align: center;
     width: 100%;
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 0; }
 
   .section--facts h1 {
